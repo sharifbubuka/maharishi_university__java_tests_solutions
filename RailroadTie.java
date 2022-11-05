@@ -7,10 +7,16 @@ public class RailroadTie {
     System.out.println(String.format("{1}: %d", isRailroadTie(new int[] {1}))); // 0
     System.out.println(String.format("{}: %d", isRailroadTie(new int[] {}))); // 0
     System.out.println(String.format("{0}: %d", isRailroadTie(new int[] {0}))); // 0
+    System.out.println(String.format("{1,2}: %d", isRailroadTie(new int[] {1, 2}))); // 1
+    System.out.println(String.format("{1, 2, 0, 1, 2, 0, 1, 2}: %d", isRailroadTie(new int[] {1, 2, 0, 1, 2, 0, 1, 2}))); // 1
+    System.out.println(String.format("{3, 3, 0, 3, 3, 0, 3, 3, 0, 3, 3}: %d", isRailroadTie(new int[] {3, 3, 0, 3, 3, 0, 3, 3, 0, 3, 3}))); // 1
+    System.out.println(String.format("{0, 0, 0, 0}: %d", isRailroadTie(new int[] {0, 0, 0, 0}))); // 0
+    System.out.println(String.format("{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}: %d", isRailroadTie(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}))); // 0
+    System.out.println(String.format("{1, 3, 0, 3, 5, 0}: %d", isRailroadTie(new int[] {1, 3, 0, 3, 5, 0}))); // 0
   }
 
   private static int isRailroadTie(int[] a) {
-    if (a.length < 3) return 0;
+    if (a.length < 2) return 0;
 
     boolean nonezero = false;
 
