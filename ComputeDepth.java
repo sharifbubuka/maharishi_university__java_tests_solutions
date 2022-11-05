@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class ComputeDepth {
   public static void main(String[] args) {
     System.out.println(String.format("42: %d", computeDepth(42))); // 9
